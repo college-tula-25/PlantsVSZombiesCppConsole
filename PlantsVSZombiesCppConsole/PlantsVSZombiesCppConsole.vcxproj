@@ -123,21 +123,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleRender.cpp" />
-    <ClCompile Include="GameEngine.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Plants.cpp" />
+    <ClCompile Include="Core\GameEngine.cpp" />
+    <ClCompile Include="Core\Types\Vector2\Vector2.cpp" />
+    <ClCompile Include="Data\DatabaseManager.cpp" />
+    <ClCompile Include="Core\GridManager.cpp" />
+    <ClCompile Include="Core\ObjectManager.cpp" />
+    <ClCompile Include="Core\InputManager.cpp" />
     <ClCompile Include="PlantsVSZombiesCppConsole.cpp" />
-    <ClCompile Include="Types.cpp" />
-    <ClCompile Include="Zombie.h" />
+    <ClCompile Include="Render\ConsoleRender.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConsoleRender.h" />
-    <ClInclude Include="GameEngine.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Other.h" />
-    <ClInclude Include="Plant.h" />
-    <ClInclude Include="PlantTypes.h" />
+    <ClInclude Include="Core\GameEngine.h" />
+    <ClInclude Include="Core\GameState.h" />
+    <ClInclude Include="Core\Types\Vector2\Vector2.h" />
+    <ClInclude Include="Data\DatabaseManager.h" />
+    <ClInclude Include="Entities\GameObject.h" />
+    <ClInclude Include="Entities\LawnMower.h" />
+    <ClInclude Include="Entities\Plant\Attackers.h" />
+    <ClInclude Include="Entities\Plant\Attackers\Peashooter.h" />
+    <ClInclude Include="Entities\Plant\Defensive.h" />
+    <ClInclude Include="Entities\Plant\Defensive\WallNut.h" />
+    <ClInclude Include="Entities\Plant\InstantEffect.h" />
+    <ClInclude Include="Entities\Plant\InstantEffect\CherryBomb.h" />
+    <ClInclude Include="Entities\Plant\Plant.h" />
+    <ClInclude Include="Entities\Plant\SunGives.h" />
+    <ClInclude Include="Entities\Plant\SunGives\Sunflower.h" />
+    <ClInclude Include="Entities\Projectile.h" />
+    <ClInclude Include="Entities\Sun.h" />
+    <ClInclude Include="Entities\Zombie\RegularZombie .h" />
+    <ClInclude Include="Entities\Zombie\Zombie.h" />
+    <ClInclude Include="Core\GridManager.h" />
+    <ClInclude Include="Core\ObjectManager.h" />
+    <ClInclude Include="Core\GameException.h" />
+    <ClInclude Include="Core\InputManager.h" />
+    <ClInclude Include="Render\ConsoleRender.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
